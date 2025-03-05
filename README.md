@@ -3,6 +3,7 @@
 这是一个可以对图片进行布局的库。通过几个布局类来对图片进行简单的布局，以此来生成特定布局的图片，他类似与 javafx 的布局类一样
 
 ## 快速开始
+* 在 maven 中导入 io.github.zimoyin:imagefx:1.0 即可
 ```java
 // 创建 VBox 容器并设置背景颜色
 VBox root = new VBox();
