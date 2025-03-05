@@ -22,6 +22,13 @@ BufferedImage bufferedImage = ImageFxUtil.nodeToBufferedImage(root);
 
 // 保存图像到文件
 ImageFxUtil.saveImage(bufferedImage, "./image.png");
+
+////// 如果想要那带 g2d 可以通过以下方式
+val image = BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB)
+val g = image.createGraphics()
+root.render(g) // 渲染
+g.dispose()
+
 ```
 其余的布局类有
 * [BorderLayout.kt](src/main/kotlin/io/github/zimoyin/imagefx/layout/BorderLayout.kt)

@@ -15,8 +15,10 @@ fun main() {
 
     val root = VBox().apply {
         background = Color.YELLOW
+        enabledAntialiasing = true
         repeat(10) {
             add(TextNode("这是测试文本 ${it + 1}，这是一个较长的自动换行示例文本")).apply {
+                font = Font("Microsoft YaHei Ul", Font.PLAIN, 20)
                 color = Color.RED
                 autoWrap = true
             }
